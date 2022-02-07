@@ -1,0 +1,33 @@
+###### ResNet-20
+
+###Classifier:
+#Train
+python3 main.py --trainer=Classifier --config=cifar_resnet20/config.yaml
+#Test
+python3 main.py --trainer=Classifier --config=cifar_resnet20/config.yaml --test
+
+###One-shot reconstruction:
+python3 main.py --trainer=Reconstruction --config=cifar_resnet20/recon.yaml
+
+###Iterative reconstruction:
+python3 main.py --trainer=ReconFromFile --config=cifar_resnet20/recon.yaml
+
+
+
+##### VGG-16
+###Classifier:
+#Train
+python3 main.py --trainer=Classifier --config=cifar_vgg16/config.yaml
+#Test
+python3 main.py --trainer=Classifier --config=cifar_vgg16/config.yaml --test
+
+###One-shot Reconstruction
+python3 main.py --trainer=Reconstruction --config=cifar_vgg16/recon.yaml
+
+###Retrained Recon:
+python3 main.py --trainer=ReconstructionFromFile --config=cifar_vgg16/recon.yaml
+
+###Pruning:
+python3 main.py --trainer=Prune --config=cifar_vgg16/prune.yaml
+
+

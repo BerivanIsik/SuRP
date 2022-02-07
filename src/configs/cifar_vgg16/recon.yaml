@@ -1,0 +1,56 @@
+training:
+  batch_size: 128
+  n_epochs: 20
+  n_iterations: 500000
+  retrain_epochs: 20
+  ngpu: 1
+  iter_log: 1000
+  iter_save: 100
+  alpha: 13.0
+  gamma: 1.0
+  normalize: True  # Normalize the weights.
+  retrain: True  # Retrain before SuRP.
+  exp_id:  "cifar_vgg16_recons_alpha_13_gam_1_spars_48_8"
+  clf_id: "cifar_vgg16"
+  save_dir: "/path to src/checkpoints"
+  data_dir: "/path to src//data"
+  input_model: "path to src/saved_models/cifar_vgg16/iterative/alpha_13_gam_1"
+  mask_dir: "path to src/saved_models/cifar_vgg16/iterative/alpha_13_gam_1"
+
+data:
+  dataset: "cifar10"
+  image_size: 32
+  channels: 3
+  in_dim: 3072
+  n_classes: 10
+  window_size: 1000
+  block_len: 1000
+  prune: [0.2, 0.36, 0.488, 0.5904, 0.67232, 0.737856, 0.7903, 0.83224, 0.8658, 0.893, 0.92, 0.94, 0.96, 0.97, 0.98, 0.99, 0.992, 0.994, 0.996, 0.997, 0.998, 0.999]
+  sparsity: [0.488, 0] # [sparsity of the input model, target sparsity]
+  period: 10000
+
+nn:
+  name: "vgg16"
+  spectral_norm: true
+  batch_norm: true
+  in_dim: 1000
+  f_size: 7
+  bias: true
+  baseline: false
+  conditional: false
+  h_dim: 500
+  n_layers: 1
+  skip: false
+  drop: false
+
+optim:
+  weight_decay: 0.0005
+  optimizer: "SGD"
+  lr: 0.1
+  lr_retrain:  0.001
+  beta1: 0.9
+  amsgrad: false
+
+loss:
+  b_size: 10
+  lamb: 0.5

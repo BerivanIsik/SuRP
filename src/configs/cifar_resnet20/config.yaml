@@ -1,0 +1,51 @@
+training:
+  batch_size: 128
+  n_epochs: 350
+  retrain_epochs: 20 # to be adjusted.
+  ngpu: 1
+  iter_log: 1000
+  iter_save: 100
+  exp_id: "cifar_resnet20"
+  clf_id: "cifar_resnet20"
+  save_dir: "/path to src/checkpoints"
+  data_dir: "/path to src/data"
+
+data:
+  dataset: "cifar10"
+  image_size: 32
+  channels: 3
+  in_dim: 3072
+  n_classes: 10
+  window_size: 1000
+  block_len: 1000
+  prune: 0.8
+
+model:
+  name: "resnet20"
+  spectral_norm: true
+  batch_norm: true
+  in_dim: 1000
+  f_size: 7
+  bias: true
+  baseline: false
+  conditional: false
+  h_dim: 500
+  n_layers: 1
+  skip: false
+  drop: false
+
+nn:
+  name: "resnet20"
+  spectral_norm: true
+  batch_norm: true
+  bias: true
+  baseline: false
+  conditional: false
+  h_dim: 500
+
+optim:
+  weight_decay: 0.0005
+  optimizer: "SGD"
+  lr: 0.1
+  beta1: 0.9
+  amsgrad: false
