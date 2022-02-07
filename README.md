@@ -5,7 +5,7 @@ Implementation of the SuRP algorithm by the authors of the AISTATS 2022 paper "A
 >[Berivan Isik](https://sites.google.com/view/berivanisik), [Tsachy Weissman](https://web.stanford.edu/~tsachy/), [Albert No](http://albertno.hongik.ac.kr/) <br/>
 > International Conference on Artificial Intelligence and Statistics (AISTATS), 2022. <br/>
 
-# References
+## References
 If you find this work useful in your research, please consider citing our paper:
 ```
 @article{isik2021rate,
