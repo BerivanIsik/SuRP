@@ -6,7 +6,7 @@ Implementation of the SuRP algorithm by the authors of the AISTATS 2022 paper "A
 > International Conference on Artificial Intelligence and Statistics (AISTATS), 2022. <br/>
 
 ## 1) Train the baseline model:
-To train the baseline model to be compressed set `trainer=Classifier`. To try this for ResNet-20, run:
+To train the baseline model to be compressed, set `trainer=Classifier`. To try this for ResNet-20, run:
 
 ```
 python3 main.py --trainer=Classifier --config=cifar_resnet20/config.yaml
