@@ -26,10 +26,10 @@ python3 main.py --trainer=Reconstruction --config=cifar_resnet20/recon.yaml
 ```
 
 ## 3) Iterative reconstruction with SuRP:
-To compress the baseline model with SuRP iteratively, run the above command several times following a sparsity schedule. Each time, modify `exp_id` and `sparsity: [sparsity of the input model, target sparsity]`, accordingly. To retrain the sparse models before applying SuRP again, set `retrain: True`. And run:
+To compress the baseline model with SuRP iteratively, apply SuRP several times following a sparsity schedule. Each time, modify `exp_id` and `sparsity: [sparsity of the input model, target sparsity]`, accordingly. To retrain the sparse models before applying SuRP again, set `retrain: True`. And run:
 
 ```
-python3 main.py --trainer=Reconstruction --config=cifar_resnet20/recon.yaml
+python3 main.py --trainer=ReconFromFile --config=cifar_resnet20/recon.yaml
 ```
 
 ## References
