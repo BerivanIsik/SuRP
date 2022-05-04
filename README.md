@@ -45,4 +45,5 @@ If you find this work useful in your research, please consider citing our paper:
   series = 	 {Proceedings of Machine Learning Research},
   publisher =    {PMLR},
   url = 	 {https://proceedings.mlr.press/v151/isik22a.html},
+}
 ```
