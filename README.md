@@ -43,7 +43,6 @@ If you find this work useful in your research, please consider citing our paper:
   year = 	 {2022},
   volume = 	 {151},
   series = 	 {Proceedings of Machine Learning Research},
-  month = 	 {28--30 Mar},
   publisher =    {PMLR},
   url = 	 {https://proceedings.mlr.press/v151/isik22a.html},
 ```
