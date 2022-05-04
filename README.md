@@ -35,10 +35,16 @@ python3 main.py --trainer=ReconFromFile --config=cifar_resnet20/recon.yaml
 ## References
 If you find this work useful in your research, please consider citing our paper:
 ```
-@article{isik2021rate,
-  title={Rate-Distortion Theoretic Model Compression: Successive Refinement for Pruning},
-  author={Isik, Berivan and No, Albert and Weissman, Tsachy},
-  journal={arXiv preprint arXiv:2102.08329},
-  year={2021}
-}
+@InProceedings{pmlr-v151-isik22a,
+  title = 	 { An Information-Theoretic Justification for Model Pruning },
+  author =       {Isik, Berivan and Weissman, Tsachy and No, Albert},
+  booktitle = 	 {Proceedings of The 25th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {3821--3846},
+  year = 	 {2022},
+  editor = 	 {Camps-Valls, Gustau and Ruiz, Francisco J. R. and Valera, Isabel},
+  volume = 	 {151},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {28--30 Mar},
+  publisher =    {PMLR},
+  url = 	 {https://proceedings.mlr.press/v151/isik22a.html},
 ```
