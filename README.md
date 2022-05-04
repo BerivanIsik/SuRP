@@ -41,7 +41,6 @@ If you find this work useful in your research, please consider citing our paper:
   booktitle = 	 {Proceedings of The 25th International Conference on Artificial Intelligence and Statistics},
   pages = 	 {3821--3846},
   year = 	 {2022},
-  editor = 	 {Camps-Valls, Gustau and Ruiz, Francisco J. R. and Valera, Isabel},
   volume = 	 {151},
   series = 	 {Proceedings of Machine Learning Research},
   month = 	 {28--30 Mar},
